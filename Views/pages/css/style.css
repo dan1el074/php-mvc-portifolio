@@ -32,24 +32,13 @@ p {
   color: black;
 }
 
-a {
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-}
-
-input {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-}
-
-label {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-}
-
+a,
+input,
+label,
 textarea {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  text-decoration: none;
 }
 
 #menu a {
@@ -201,7 +190,7 @@ main {
   align-items: center;
   max-width: 1200px;
   padding: 0 42px;
-  margin: 130px auto;
+  margin: 130px auto 52px;
 }
 
 main.fade-in {
@@ -354,6 +343,14 @@ footer .divider {
   margin: 0 5px;
 }
 
+footer .divider-mobile {
+  display: none;
+  background-color: #551a8b;
+  width: 140px;
+  height: 2px;
+  margin: 8px auto;
+}
+
 /* //////// Media query //////// */
 @media (max-width: 801px) {
   main {
@@ -390,8 +387,29 @@ footer .divider {
     padding: 0 40px;
   }
 
+  footer {
+    padding-top: 32px;
+  }
+
   footer p {
+    display: block;
+    margin: 0 auto;
     font-size: 14px;
+    max-width: 200px;
+  }
+
+  footer .divider {
+    display: none;
+  }
+
+  footer .divider-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 250px) {
+  footer .divider-mobile {
+    width: 100%;
   }
 }
 

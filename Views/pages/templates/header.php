@@ -14,7 +14,7 @@
             <header>
                 <nav>
                     <a href="<?= INCLUDE_PATH ?>">
-                        <img src="<?= INCLUDE_PATH ?>assets/images/d-logo.svg" class="logo" alt="Logo">
+                        <img src="<?= INCLUDE_PATH_FULL ?>assets/images/d-logo.svg" class="logo" alt="Logo">
                     </a>
 
                     <div id="menuToggle">
